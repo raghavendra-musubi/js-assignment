@@ -4,22 +4,34 @@ const apiUrl = 'https://type.fit/api/quotes'
 let quotesArray 
 let quoteElement = document.getElementById("quote")
 let authorElement = document.getElementById("author")
+let arrIndexToPick
 
 fetch(apiUrl)
   .then(function(response) {
     return response.json()
   })
-  .then(function(quotesArray) {
+  .then(function(data) {
     
-    console.log(quotesArray.length)
+    // save the array returned by api call
+    quotesArray = data
 
-    // load a random quote and the author
+    // generate a random number between zero and the length of the number of quotes available
+    arrIndexToPick = Math.floor((Math.random() * quotesArray.length) + 1);
     
-
-    // set the inner text for author and quote
-    quoteElement.innerHTML = "Here goes the quote"
-    authorElement.innerHTML = "Here goes the author"
-
+    // set the inner text for author and quote for the first load
+    quoteElement.innerHTML = quotesArray[arrIndexToPick].text
+    authorElement.innerHTML = quotesArray[arrIndexToPick].author
 
   });
+
+function generateNew(){
+
+    // generate a random number between zero and the length of the number of quotes available
+    arrIndexToPick = Math.floor((Math.random() * quotesArray.length) + 1);
+
+    // set the inner text for author and quote for the first load
+    quoteElement.innerHTML = quotesArray[arrIndexToPick].text
+    authorElement.innerHTML = quotesArray[arrIndexToPick].author
+
+}
 

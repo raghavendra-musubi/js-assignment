@@ -32,3 +32,6 @@ Build a simple calculator
     - float division
 
 - display must support at-least 9 digits 
+- must have a Clear button 
+- must support digits 0-9 
+- must support decimal number input

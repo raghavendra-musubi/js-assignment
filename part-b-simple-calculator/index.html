@@ -23,6 +23,12 @@
 
         <div id="display" class="mx-auto my-4 rounded bg-white">
 
+            <h5 id="current-expression" class="p-3"> </h5>
+
+            <h1 id="eval-answer" class="mx-1 text-right">
+                0.
+            </h1>
+
         </div>
 
         <hr class="w-100 border border-dark">
@@ -30,66 +36,65 @@
         <div id="button-grid" class="container">
             <div class="row">
                 <div class="col">
-                    <button id="7" type="button" class="btn btn-info mx-1 my-3"> 7 </button> 
+                    <button id="7" type="button" class="btn btn-info mx-1 my-3" value="7"> 7 </button> 
                 </div>
                 <div class="col">
-                    <button id="8" type="button" class="btn btn-info mx-1 my-3"> 8 </button> 
+                    <button id="8" type="button" class="btn btn-info mx-1 my-3" value="8"> 8 </button> 
                 </div>
                 <div class="col">
-                    <button id="9" type="button" class="btn btn-info mx-1 my-3"> 9 </button> 
+                    <button id="9" type="button" class="btn btn-info mx-1 my-3" value="9"> 9 </button> 
                 </div>
                 <div class="col">
-                    <button id="÷" type="button" class="btn btn-info mx-1 my-3"> ÷ </button> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button id="7" type="button" class="btn btn-info mx-1 my-3"> 4 </button> 
-                </div>
-                <div class="col">
-                    <button id="8" type="button" class="btn btn-info mx-1 my-3"> 5 </button> 
-                </div>
-                <div class="col">
-                    <button id="9" type="button" class="btn btn-info mx-1 my-3"> 6 </button> 
-                </div>
-                <div class="col">
-                    <button id="÷" type="button" class="btn btn-info mx-1 my-3"> X </button> 
+                    <button id="÷" type="button" class="btn btn-info mx-1 my-3 operator" value="/"> ÷ </button> 
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button id="7" type="button" class="btn btn-info mx-1 my-3"> 1 </button> 
+                    <button id="7" type="button" class="btn btn-info mx-1 my-3" value="4"> 4 </button> 
                 </div>
                 <div class="col">
-                    <button id="8" type="button" class="btn btn-info mx-1 my-3"> 2 </button> 
+                    <button id="8" type="button" class="btn btn-info mx-1 my-3" value="5"> 5 </button> 
                 </div>
                 <div class="col">
-                    <button id="9" type="button" class="btn btn-info mx-1 my-3"> 3 </button> 
+                    <button id="9" type="button" class="btn btn-info mx-1 my-3" value="6"> 6 </button> 
                 </div>
                 <div class="col">
-                    <button id="÷" type="button" class="btn btn-info mx-1 my-3"> - </button> 
+                    <button id="÷" type="button" class="btn btn-info mx-1 my-3 operator" value="*"> x </button> 
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button id="7" type="button" class="btn btn-info mx-1 my-3"> 0 </button> 
+                    <button id="7" type="button" class="btn btn-info mx-1 my-3" value="1"> 1 </button> 
                 </div>
                 <div class="col">
-                    <button id="8" type="button" class="btn btn-info mx-1 my-3"> . </button> 
+                    <button id="8" type="button" class="btn btn-info mx-1 my-3" value="2"> 2 </button> 
                 </div>
                 <div class="col">
-                    <button id="9" type="button" class="btn btn-info mx-1 my-3"> + </button> 
+                    <button id="9" type="button" class="btn btn-info mx-1 my-3" value="3"> 3 </button> 
                 </div>
                 <div class="col">
-                    <button id="÷" type="button" class="btn btn-warning mx-1 my-3"> = </button> 
+                    <button id="÷" type="button" class="btn btn-info mx-1 my-3 operator" value="-"> - </button> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="7" type="button" class="btn btn-info mx-1 my-3" value="0"> 0 </button> 
+                </div>
+                <div class="col">
+                    <button id="8" type="button" class="btn btn-info mx-1 my-3" value="."> . </button> 
+                </div>
+                <div class="col">
+                    <button id="9" type="button" class="btn btn-info mx-1 my-3 operator" value="+"> + </button> 
+                </div>
+                <div class="col">
+                    <button id="÷" type="button" class="btn btn-warning mx-1 my-3" value="="> = </button> 
                 </div>
             </div>
         </div>
 
     </div>
 
-    <!-- Optional JavaScript -->
-    <script src="index.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -102,6 +107,8 @@
         crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/602c67de4f.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
 
 </body>
 

@@ -5,7 +5,7 @@ body {
 
 #calculator-panel {
     width: 500px;
-    height: 600px;
+    height: 620px;
 }
 
 #display {
@@ -13,17 +13,17 @@ body {
     height: 100px;
 }
 
-#button-grid {
-
+#current-expression {
+    height: 10px;
 }
 
-.col {
-    
+#eval-answer {
+    height: 40px;
 }
 
-button {
+.btn {
     width: 75px;
     height: 75px;
-    margin-right: auto !important;
-    margin-left: auto !important;
+    font-size: 25pt;
 }
+

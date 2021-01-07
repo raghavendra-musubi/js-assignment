@@ -40,7 +40,8 @@
     - multiplication
     - float division
 
-- calculator display shows 9 digits maximum at a time  
-- calculator button has a `C` button
 - calculator has buttons 0-9 
 - calculator has a decimal button 
+- calculator has `=` button that evaluates the current expression
+- `=` button clears output when pressed second time after evaluating expression
+- after pressing the `=` button once, the expression can be chained with the current output to create a new expression
